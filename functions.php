@@ -15,9 +15,9 @@ function brindle_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'your_theme_js' );
 
 // Includes color stuff
-require_once get_stylesheet_directory() . '/inc/defaults.php';
-require_once get_stylesheet_directory() . '/inc/customizer.php';
-require_once get_stylesheet_directory() . '/inc/css-output.php';
+require_once get_stylesheet_directory() . '/inc/defaults-child.php';
+require_once get_stylesheet_directory() . '/inc/customizer-child.php';
+require_once get_stylesheet_directory() . '/inc/css-output-child.php';
 
 
 
