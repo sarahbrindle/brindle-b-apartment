@@ -97,6 +97,9 @@ if ( ! function_exists( 'generate_base_css' ) ) {
 		$css->add_property( 'background-color', $common_primary_color );
 		$css->add_property( 'color', '#FFFFFF' );
 
+
+		
+
 		/*Content Button*/
 		$css->set_selector( '.gb-button-wrapper .gb-button-banner-btn, .gb-button-wrapper .gb-button-banner-btn:visited' );
 		$css->add_property( 'background-color', $common_button_color );
@@ -104,6 +107,17 @@ if ( ! function_exists( 'generate_base_css' ) ) {
 
 		/*Content Button Hover*/
 		$css->set_selector( '.gb-button-wrapper .gb-button-banner-btn:hover, .gb-button-wrapper .gb-button-banner-btn:active, .gb-button-wrapper .gb-button-banner-btn:focus ' );
+		$css->add_property( 'background-color', $common_secondary_color );
+		$css->add_property( 'color', '#FFFFFF !important' );
+
+
+		/**Grafity Form Button And Tab Active Color*/
+		$css->set_selector( '.contact-form input[type="submit"],.gform_footer input[type=submit],.resp-tab-active' );
+		$css->add_property( 'background-color', $common_button_color );
+		$css->add_property( 'color', '#FFFFFF !important' );
+
+		/**Grafity Form Button And Tab Active Hover*/
+		$css->set_selector( '.contact-form input[type="submit"]:hover,.gform_footer input[type=submit]:hover,.resp-tab-item:hover' );
 		$css->add_property( 'background-color', $common_secondary_color );
 		$css->add_property( 'color', '#FFFFFF !important' );
 		
@@ -116,9 +130,22 @@ if ( ! function_exists( 'generate_base_css' ) ) {
 		$css->add_property( 'font-size', absint( $settings['slideout_font_size'] ), absint( $defaults['slideout_font_size'] ), 'px' );
 		
 		
+		
+
+		$css->set_selector( '.slideout-navigation.main-navigation .main-nav ul li a' );
+		$css->add_property( 'color', $common_secondary_color );
+
+		$css->set_selector( '.slideout-navigation .main-nav ul li.current_page_item > a,.slideout-navigation .main-nav ul li a:hover,.slideout-navigation.main-navigation .main-nav ul li a:hover' );
+		$css->add_property( 'color', $common_button_color );
 
 		
 
+		
+		$css->set_selector( 'body .resp-tabs-list li,body ul.social-media-links-grp.wp-block-social-links .wp-social-link a' );
+		$css->add_property( 'color', $common_secondary_color );
+
+		$css->set_selector( 'ul.resp-tabs-list .resp-tab-active,ul.resp-tabs-list .resp-tab-item:hover,body ul.social-media-links-grp.wp-block-social-links .wp-social-link a:hover' );
+		$css->add_property( 'color', $common_button_color );
 		
 
 		
@@ -127,6 +154,13 @@ if ( ! function_exists( 'generate_base_css' ) ) {
 		$css->set_selector( '.site-footer' );
 		$css->add_property( 'background-color', $settings['footer_widget_background_color'] );
 		//Menu
+		
+		$css->set_selector( '#menu-footer-menu li a' );
+		$css->add_property( 'color', $common_primary_color );
+
+		$css->set_selector( '#menu-footer-menu li a:hover,#menu-footer-menu li.current_page_item a' );
+		$css->add_property( 'color', $common_button_color );
+	
 		
 		
 

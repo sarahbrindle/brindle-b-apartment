@@ -6,9 +6,9 @@ Author: Brindle Digital
 Author URI: https://www.brindledigital.com/
 GitHub Theme URI: https://github.com/sarahbrindle/brindle-pinetop
 GitHub Branch:    master
-Version: v1.0.1
+Version: v1.0.0
 Template:		 generatepress
-Date:            12-04-2021
+Date:            20-03-2021
 Requires at least: 5.0
 Tested up to: 5.7
 Requires PHP: 7.0
@@ -239,7 +239,12 @@ body{
     flex-wrap: wrap;
 }
 .footer-bar .widget-last{
-    display: none;
+    padding-left: 15px!important;
+}
+.footer-bar .widget-last img{
+    width: auto !important;
+    height: 25px !important;
+    max-width: none !important;
 }
 footer.site-info .footer-bar ul li{
     margin: 0;
@@ -291,6 +296,53 @@ body .gb-container.amenities-text-right > .gb-inside-container{
 }
 .wp-block-columns.mr-0{
     margin: 0;
+}
+
+.gform_wrapper .gform_heading{
+    display: none;
+}
+.gform_wrapper input[type="text"], .gform_wrapper textarea{
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #47484b;
+    padding-left: 15px;
+}
+body .gform_wrapper .gform_footer input[type="submit"]{
+    width: 100% !important;
+}
+body  .gform_footer.top_label{
+    padding-right: 16px;
+}
+body .gform_wrapper .ginput_container input{
+    margin: 0!important;
+}
+.ginput_container.ginput_container_email, .ginput_container.ginput_container_phone{
+    margin-top: 0!important;
+}
+.ginput_container.ginput_container_email input, .ginput_container.ginput_container_phone input{
+    margin-top: 0!important;
+}
+body .gform_wrapper div.validation_error, body .gform_wrapper .validation_message{
+    font-size: 18px;
+    font-weight: 600;
+}
+.tab-grid h4{
+    font-size: 32px;
+}
+.tab-grid a{
+    box-shadow: none;
+    border: 0;
+}
+body .resp-tabs-list li{
+    padding: 5px 20px;
+}
+.sub-nav-links ul{
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+}
+.tel-link{
+    text-align: right;
 }
 
 
@@ -366,14 +418,36 @@ body #generate-slideout-menu{
 }
 
 .slideout-navigation.main-navigation .main-nav ul li a{
-    color: #13151d!important;
+    /*color: #13151d!important;*/
     line-height: 38px;
 }
 .slideout-navigation.main-navigation .main-nav ul li a:hover{
-    color: #c4913e!important;
+    /*color: #c4913e!important;*/
 }
-
-
+body .resp-tabs-list li{
+    /*color: #181c27!important;*/
+}
+ul.resp-tabs-list .resp-tab-active{
+    background-color: transparent!important;
+    /*color: #c4913e !important;*/
+    outline: 1px dotted;
+}
+ul.resp-tabs-list .resp-tab-item:hover {
+    background-color: transparent !important;
+   /* color: #c4913e !important;*/
+}
+body .section-apartments-links{
+    border-top: 1px solid rgba(0,0,0,.07)!important;
+    border-bottom: 1px solid rgba(0,0,0,.07)!important;
+}
+body ul.social-media-links-grp.wp-block-social-links .wp-social-link a{
+    background-color: #181c27!important;
+   /* color: #fff!important;*/
+    border-radius: 4px;
+}
+body ul.social-media-links-grp.wp-block-social-links .wp-social-link a:hover{
+    /*background-color: #c4913e!important;*/
+}
 
 /*===========media-queries==============*/
 
@@ -462,6 +536,9 @@ body #generate-slideout-menu{
     .amenities-text-right ul li, .amenities-text-left ul li{
         padding: 10px 0;
     }
+    body ul.social-media-links-grp.wp-block-social-links{
+        display: flex !important;
+    }
 }
 @media(max-width:768px){    
     .inside-header, .footer-widgets-container {
@@ -521,6 +598,12 @@ body #generate-slideout-menu{
     }
     .footer-nav > div {
         padding-top: 0;
+    }
+    .gb-container.section-apartments-links .gb-inside-container{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media(max-width:475px){
