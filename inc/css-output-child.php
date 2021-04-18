@@ -34,14 +34,7 @@ if ( ! function_exists( 'generate_base_css' ) ) {
 		$css->add_property( 'background-color', $settings['background_color'] );
 		$css->add_property( 'color', $common_text_color );	
 
-		/*Common Text Color*/
-		//$css->set_selector( '.main-navigation.slideout-navigation ul li a,.top-bar .top-bar-title,.top-bar-btn a' );
-		//$css->set_selector( '.top-bar .top-bar-title,.top-bar-btn a' );
-		//$css->add_property( 'color', $common_text_color );
-
-		//$css->set_selector( '.top-bar-btn a:hover' );
-		//$css->add_property( 'background-color', $common_text_color );
-
+	
 
 		/*Common Primary Color*/
 		$css->set_selector( 'h1,.main-navigation .main-nav ul li a,.main-navigation .slideout-toggle a' );
