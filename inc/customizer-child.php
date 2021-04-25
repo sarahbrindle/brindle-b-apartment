@@ -1,5 +1,14 @@
 <?php
-add_action( 'customize_register', 'child_generate_set_customizer_helpers', 1 );
+/**
+ * Builds our Customizer Extra Child Theme Controls.
+ *
+ * @package GeneratePress
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+add_action( 'customize_register', 'child_generate_set_customizer_helpers', 2 );
 /**
  * Set up helpers early so they're always available.
  * Other modules might need access to them at some point.
@@ -10,15 +19,16 @@ function child_generate_set_customizer_helpers() {
 	require_once trailingslashit( get_template_directory() ) . 'inc/customizer/customizer-helpers.php';
 }
 
-if ( ! function_exists( 'generate_customize_register' ) ) {
-	add_action( 'customize_register', 'generate_customize_register' );
+if ( ! function_exists( 'child_generate_customize_register' ) ) {
+	add_action( 'customize_register', 'child_generate_customize_register' );
 	/**
 	 * Add our base options to the Customizer.
 	 *
 	 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
 	 */
-	function generate_customize_register( $wp_customize ) {
+	function child_generate_customize_register( $wp_customize ) {
 		$defaults = generate_get_defaults();
+
 		require_once trailingslashit( get_template_directory() ) . 'inc/customizer/customizer-helpers.php';
 
 		$wp_customize->add_section(
@@ -26,7 +36,7 @@ if ( ! function_exists( 'generate_customize_register' ) ) {
 			array(
 				'title' => $wp_customize->get_panel( 'generate_colors_panel' ) ? __( 'Common', 'generatepress' ) : __( 'Colors', 'generatepress' ),
 				'capability' => 'edit_theme_options',
-				'priority' => 30,
+				'priority' => 29,
 				'panel' => $wp_customize->get_panel( 'generate_colors_panel' ) ? 'generate_colors_panel' : false,
 			)
 		);
