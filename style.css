@@ -272,32 +272,33 @@ body .resp-tab-active, body .resp-tab-item:hover{
 /*=============colors==============*/
 
 .top-bar .widget_nav_menu li:last-child a{
-    background-color: #bca664;
+    /*background-color: #bca664;*/
 }
 .top-bar .widget_nav_menu li:last-child a:hover{
-    color: #1f313b;
+   /* color: #1f313b;*/
 }
 .gb-container.testimonial-box::after{
     border-left: 4px solid #bca664;
     border-bottom: 4px solid #bca664;
 }
 .gb-container.border-after::after{
-    background-color: #bca664;
+   /* background-color: #bca664;*/
 }
 .gb-container.border-right::after{
-    background-color: #8c3944;
+    /*background-color: #8c3944;*/
 }
 .wp-block-buttons.banner-btn-grp .wp-block-button a:hover{
-    color: #bca664;
-    border-bottom: 1px solid #bca664;
+    /*color: #bca664;
+    border-bottom: 1px solid #bca664;*/
+    border-bottom: 1px solid;
 }
 .wp-block-buttons.banner-btn-grp .wp-block-button a{
     background-color: transparent;
-    color: #bca664;
+   /* color: #bca664;*/
 }
 body .gform_wrapper .gform_footer input.button, body .gform_wrapper .gform_footer input[type="submit"]{
-    background-color: #c4913e;
+   /* background-color: #c4913e;*/
 }
 body .gform_wrapper .gform_footer input.button:hover, body .gform_wrapper .gform_footer input[type="submit"]:hover{
-    background-color: #414042;
+    /*background-color: #414042;*/
 }

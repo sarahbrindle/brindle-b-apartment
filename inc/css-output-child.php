@@ -16,8 +16,9 @@ if ( ! function_exists( 'generate_base_css' ) ) {
 		$imp_common_text_color       = $settings['common_text_color'];
 		$imp_common_primary_color    = $settings['common_primary_color'];
 		$imp_common_secondary_color  = $settings['common_secondary_color'];
-		$imp_common_button_color     = $settings['common_button_color'];
+		$imp_common_button_color     = $settings['common_button_color']." !important";
 
+		
 		$common_text_color       = $settings['common_text_color'];
 		$common_primary_color    = $settings['common_primary_color'];
 		$common_secondary_color  = $settings['common_secondary_color'];
@@ -28,10 +29,10 @@ if ( ! function_exists( 'generate_base_css' ) ) {
 		//$common_secondary_color  = '#1f313b';
 		//$common_button_color     = '#bca664';
 		
-		$common_text_color       = $common_text_color." !important";
-		$common_primary_color    = $common_primary_color." !important";
-		$common_secondary_color  = $common_secondary_color." !important";
-		$common_button_color     = $common_button_color." !important";
+		//$common_text_color       = $common_text_color." !important";
+		//$common_primary_color    = $common_primary_color." !important";
+		//$common_secondary_color  = $common_secondary_color." !important";
+		//$common_button_color     = $common_button_color." !important";
 
 		
 
@@ -76,7 +77,8 @@ if ( ! function_exists( 'generate_base_css' ) ) {
 
 		
 		$css->set_selector( '.wp-block-buttons.banner-btn-grp .wp-block-button a:hover' );
-		$css->add_property( 'border-bottom-color', $common_button_color );
+		$css->add_property( 'color', $common_button_color );
+		$css->add_property( 'border-bottom-color', $imp_common_button_color );
 
 		/*Normal Button*/
 		$css->set_selector( '.gb-button-wrapper .gb-button-page-btn, .gb-button-wrapper .gb-button-page-btn:visited' );
@@ -91,6 +93,10 @@ if ( ! function_exists( 'generate_base_css' ) ) {
 		$css->set_selector( '.outer-bg-primary' );
 		$css->add_property( 'background-color', $common_primary_color );
 		
+		/*H2 Text color*/
+		$css->set_selector( 'h2' );		
+		$css->add_property( 'color', $imp_common_text_color );
+
 		/*Secondary Text color*/
 		$css->set_selector( 'h3,h4' );		
 		$css->add_property( 'color', $imp_common_secondary_color );
