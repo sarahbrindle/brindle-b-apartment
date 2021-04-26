@@ -131,6 +131,11 @@ if ( ! function_exists( 'generate_base_css' ) ) {
 		$css->set_selector( '.menu-footer-bar-menu-container ul li a' );
 		$css->add_property( 'color', $common_text_color );
 
+		$css->set_selector( 'body .footer-bar .widget_nav_menu li::before' );
+		$css->add_property( 'color', $common_text_color );
+
+		
+
 		$css->set_selector( '.menu-footer-bar-menu-container ul li a:hover,.menu-footer-bar-menu-container ul li.current_page_item a' );
 		$css->add_property( 'color', $common_button_color );
 
