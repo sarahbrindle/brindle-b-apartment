@@ -6,9 +6,9 @@ Author: Brindle Digital
 Author URI: https://www.brindledigital.com/
 GitHub Theme URI: https://github.com/sarahbrindle/brindle-b-apartment
 GitHub Branch:    master
-Version: v1.0.2
+Version: v1.0.4
 Template:		 generatepress
-Date:            11-05-2021
+Date:            07-08-2021
 Requires at least: 5.0
 Tested up to: 5.7
 Requires PHP: 7.0
@@ -23,8 +23,8 @@ Text Domain:	 brindle-b-apartment
 */
 /*==========custome-styles=============*/
 .top-bar .widget_nav_menu li:last-child a{
-    line-height: 58px;
-    padding: 0 45px;
+    line-height: normal;
+    padding: 10px 30px;
     display: block;
 }
 .top-bar .inside-top-bar{
@@ -210,8 +210,44 @@ body .gb-container.amenities-text ul li{
 body .resp-tab-active, body .resp-tab-item:hover{
     color: #FFF;
 }
-
-
+body .floorplangrid h3.floorplangrid__title{
+    font-weight: 700;
+    font-size: 29px;
+}
+body .floorplangrid__rent_range .rent_range{
+    font-weight: 700;
+}
+body .floorplans.type-floorplans{
+    box-shadow: 0 0 12px rgba(0,0,0,.2);
+}
+body .floorplangrid a.button{
+    text-align: center;
+}
+.floorplangrid .filters a{
+    font-weight: 600;
+    padding: 10px 20px  !important;    
+}
+.floorplangrid__content{
+    font-weight: 400;
+}
+.gb-banner-section{
+    position: relative;
+}
+.gb-banner-section:after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,.2);
+}
+.gb-banner-section .gb-inside-container{
+    position: relative;
+    z-index:2;
+}
 /*--------------media queries---------------------*/
 @media(max-width:1200px){
     .gb-container.testimonial-box::before{
@@ -256,8 +292,7 @@ body .resp-tab-active, body .resp-tab-item:hover{
         justify-content: flex-end;
     }
     .top-bar .widget_nav_menu li:last-child a {
-        line-height: 45px;
-        padding: 0 25px;
+        padding:8px 20px;
     }
 }
 @media(max-width:767px){
