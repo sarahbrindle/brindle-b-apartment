@@ -6,9 +6,9 @@ Author: Brindle Digital
 Author URI: https://www.brindledigital.com/
 GitHub Theme URI: https://github.com/sarahbrindle/brindle-b-apartment
 GitHub Branch:    master
-Version: v1.0.5
+Version: v1.0.6
 Template:		 generatepress
-Date:            25-08-2021
+Date:            07-10-2021
 Requires at least: 5.0
 Tested up to: 5.7
 Requires PHP: 7.0
@@ -242,11 +242,43 @@ body .floorplangrid a.button{
     right:0;
     bottom: 0;
     z-index: 1;
-    background-color: rgba(0,0,0,.2);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), #1F313B);
+    mix-blend-mode: multiply;
 }
 .gb-banner-section .gb-inside-container{
     position: relative;
     z-index:2;
+}
+figure.wp-block-image.home-gallery-sm{
+    height: 267px;
+}
+figure.wp-block-image.home-gallery-md{
+    height: 350px;
+}
+figure.wp-block-image.home-gallery-sm img, figure.wp-block-image.home-gallery-md img{
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    object-position: center center;
+}
+.wp-block-button .wp-block-button__link {
+	letter-spacing: 0.1em;
+    padding: 30px 40px;
+}
+figure.wp-block-image.img-fluid{
+    max-height: 475px;
+    min-height: 475px;
+}
+figure.wp-block-image.img-fluid img{
+    max-width: none;
+    max-height: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    min-height: 475px;
 }
 /*--------------media queries---------------------*/
 @media(max-width:1200px){
