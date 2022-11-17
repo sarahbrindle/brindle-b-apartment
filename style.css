@@ -6,9 +6,9 @@ Author: Brindle Digital
 Author URI: https://www.brindledigital.com/
 GitHub Theme URI: https://github.com/sarahbrindle/brindle-b-apartment
 GitHub Branch:    master
-Version: v1.0.8
+Version: v1.0.7
 Template:		 generatepress
-Date:            25-07-2022
+Date:            25-10-2021
 Requires at least: 5.0
 Tested up to: 5.7
 Requires PHP: 7.0
@@ -22,96 +22,128 @@ Text Domain:	 brindle-b-apartment
     Add your custom styles here
 */
 /*==========custome-styles=============*/
-.top-bar .widget_nav_menu li:last-child a{
+.top-bar .widget_nav_menu li:last-child a {
     line-height: normal;
     padding: 10px 30px;
     display: block;
 }
-.top-bar .inside-top-bar{
+
+.top-bar .inside-top-bar {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.site-logo a{
+
+.site-logo a {
     display: block;
     max-width: 108px;
 }
-.site-header.scroll-to-fixed-fixed .site-logo a{
+
+.site-header.scroll-to-fixed-fixed .site-logo a {
     max-width: 70px;
 }
-.site-header.scroll-to-fixed-fixed .inside-header{
+
+.site-header.scroll-to-fixed-fixed .inside-header {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.main-navigation .main-nav ul li a, body .main-navigation a{
+
+.main-navigation .main-nav ul li a,
+body .main-navigation a {
     text-transform: uppercase;
 }
-body .site-footer .grid-container{
+
+body .site-footer .grid-container {
     max-width: 1130px;
 }
-body .site-footer .footer-widgets-container .widget-first.widget-1.footer-brand{
+
+body .site-footer .footer-widgets-container .widget-first.widget-1.footer-brand {
     max-width: 166px;
     margin: 0 auto;
 }
-body .site-footer h2.widget-title{
+
+body .site-footer h2.widget-title {
     font-family: "Open Sans", sans-serif !important;
 }
-body .site-footer .footer-bar{
+
+body .site-footer .footer-bar {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-body .footer-bar .widget_nav_menu li{
+
+body .footer-bar .widget_nav_menu li {
     margin: 0;
 }
-body .footer-bar .widget_nav_menu li{
+
+body .footer-bar .widget_nav_menu li {
     margin-left: 13px;
 }
-body .footer-bar .widget_nav_menu li::before{
+
+body .footer-bar .widget_nav_menu li::before {
     content: "|";
     display: inline-block;
     margin-right: 16px;
 }
-body .footer-bar .menu-footer-bar-menu-container{
+
+body .footer-bar .menu-footer-bar-menu-container {
     padding-right: 120px;
 }
-.body .site-footer .site-info{
+
+.body .site-footer .site-info {
     font-size: 14px;
 }
-.site-footer .site-info .brindle-logo.widget{
+
+.site-footer .site-info .brindle-logo.widget {
     padding-left: 22px;
 }
-body .site-footer .widget-1.copyright-text.widget .textwidget{
-    padding-right: 20px!important;
+
+body .site-footer .widget-1.copyright-text.widget .textwidget {
+    padding-right: 20px !important;
     padding-top: 5px;
 }
-.site-info .menu-footer-bar-menu-container ul li a, body .copyright-text p{
+
+.site-info .menu-footer-bar-menu-container ul li a,
+body .copyright-text p {
     font-size: 12px;
 }
-.site-footer .widget .footer-address ul{
-    margin-bottom: 25px!important;
+
+.site-footer .widget .footer-address ul {
+    margin-bottom: 25px !important;
 }
-body .site-footer{
-    text-transform: uppercase!important;
+
+body .site-footer {
+    text-transform: uppercase !important;
 }
-.gb-container.testimonial-box{
+
+.gb-container.testimonial-box {
     position: relative;
 }
-.gb-container.testimonial-box::before{
+
+.gb-container.testimonial-box::before {
     content: "";
-    background-image: url(assets/images/testimonial-before-black.png);
+    background-image: url(assets/images/testimonial-before-white.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
     right: 100px;
+    -webkit-transform: translate(-50px, -40px);
     transform: translate(-50px, -40px);
     width: 100%;
     height: 74px;
 }
-.gb-container.testimonial-box::after{
+
+.gb-container.testimonial-box::after {
     content: "";
     position: absolute;
     top: 50px;
@@ -119,10 +151,13 @@ body .site-footer{
     left: -30px;
     bottom: -30px;
 }
-.gb-container.border-after, .gb-container.border-right{
+
+.gb-container.border-after,
+.gb-container.border-right {
     position: relative;
 }
-.gb-container.border-after::after{
+
+.gb-container.border-after::after {
     content: "";
     position: absolute;
     top: 15px;
@@ -130,7 +165,8 @@ body .site-footer{
     right: 0;
     width: 2px;
 }
-.gb-container.border-right::after{
+
+.gb-container.border-right::after {
     content: "";
     position: absolute;
     right: 0;
@@ -138,247 +174,368 @@ body .site-footer{
     bottom: -30px;
     width: 1px;
 }
-.wp-block-buttons.banner-btn-grp .wp-block-button a{
+
+.wp-block-buttons.banner-btn-grp .wp-block-button a {
     border: 0;
     padding: 8px 0;
 }
-.wp-block-buttons.banner-btn-grp .wp-block-button a:hover{
+
+.wp-block-buttons.banner-btn-grp .wp-block-button a:hover {
     background: transparent;
 }
-.wp-block-buttons.banner-btn-grp .wp-block-button:nth-child(2n)::before, .wp-block-buttons.banner-btn-grp .wp-block-button:nth-child(2n)::after{
+
+.wp-block-buttons.banner-btn-grp .wp-block-button:nth-child(2n)::before,
+.wp-block-buttons.banner-btn-grp .wp-block-button:nth-child(2n)::after {
     content: "|";
     display: inline-block;
     margin: 0 12px;
 }
-.wp-block-buttons.banner-btn-grp > .wp-block-button{
+
+.wp-block-buttons.banner-btn-grp > .wp-block-button {
     margin-right: 0;
 }
-body .gform_wrapper h3.gform_title{
+
+body .gform_wrapper h3.gform_title {
     display: none;
 }
-body .gform_wrapper .gform_footer input.button, body .gform_wrapper .gform_footer input[type="submit"]{
+
+body .gform_wrapper .gform_footer input.button,
+body .gform_wrapper .gform_footer input[type="submit"] {
     width: 100%;
 }
-body .gform_wrapper div.validation_error, body .gform_wrapper .gfield_description{
+
+body .gform_wrapper div.validation_error,
+body .gform_wrapper .gfield_description {
     font-size: 16px;
 }
-.gform_wrapper input[type="text"], .gform_wrapper textarea{
+
+.gform_wrapper input[type="text"],
+.gform_wrapper textarea {
     background-color: transparent;
     border: 1px solid #ddd;
     color: #47484b;
     padding-left: 15px;
 }
-body .gform_wrapper .gform_footer input[type="submit"]{
+
+body .gform_wrapper .gform_footer input[type="submit"] {
     width: 100% !important;
 }
-body  .gform_footer.top_label{
+
+body .gform_footer.top_label {
     padding-right: 16px;
 }
-body .gform_wrapper .ginput_container input{
-    margin: 0!important;
+
+body .gform_wrapper .ginput_container input {
+    margin: 0 !important;
 }
-.ginput_container.ginput_container_email, .ginput_container.ginput_container_phone{
-    margin-top: 0!important;
+
+.ginput_container.ginput_container_email,
+.ginput_container.ginput_container_phone {
+    margin-top: 0 !important;
 }
-.ginput_container.ginput_container_email input, .ginput_container.ginput_container_phone input{
-    margin-top: 0!important;
+
+.ginput_container.ginput_container_email input,
+.ginput_container.ginput_container_phone input {
+    margin-top: 0 !important;
 }
-body .gform_wrapper div.validation_error, body .gform_wrapper .validation_message{
+
+body .gform_wrapper div.validation_error,
+body .gform_wrapper .validation_message {
     font-size: 18px;
     font-weight: 600;
 }
-body .inside-footer-widgets{
+
+body .inside-footer-widgets {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
-body .gb-container.amenities-text .gb-inside-container{
+
+body .gb-container.amenities-text .gb-inside-container {
     max-width: 620px;
 }
-body .gb-container.amenities-text.margin-l-auto .gb-inside-container{
+
+body .gb-container.amenities-text.margin-l-auto .gb-inside-container {
     margin-left: auto;
     margin-right: 0;
 }
-body .gb-container.amenities-text ul{
+
+body .gb-container.amenities-text ul {
     list-style: none;
     margin-left: 0;
 }
-body .gb-container.amenities-text ul li{
+
+body .gb-container.amenities-text ul li {
     display: block;
     padding: 20px 0;
     border-bottom: 1px solid #bca664;
     margin-bottom: 7px;
 }
-body .resp-tab-active, body .resp-tab-item:hover{
+
+body .resp-tab-active,
+body .resp-tab-item:hover {
     color: #FFF;
 }
+
 ul.resp-tabs-list li {
     margin-left: 5px;
     margin-right: 5px;
 }
-body .floorplangrid h3.floorplangrid__title{
+
+body .floorplangrid h3.floorplangrid__title {
     font-weight: 700;
     font-size: 29px;
 }
-body .floorplangrid__rent_range .rent_range{
+
+body .floorplangrid__rent_range .rent_range {
     font-weight: 700;
 }
-body .floorplans.type-floorplans{
-    box-shadow: 0 0 12px rgba(0,0,0,.2);
+
+body .floorplans.type-floorplans {
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
 }
-body .floorplangrid a.button{
+
+body .floorplangrid a.button {
     text-align: center;
 }
-.floorplangrid .filters a{
+
+.floorplangrid .filters a {
     font-weight: 600;
-    padding: 10px 20px  !important;    
+    padding: 10px 20px !important;
 }
-.floorplangrid__content{
+
+.floorplangrid__content {
     font-weight: 400;
 }
-.gb-banner-section{
+
+.gb-banner-section {
     position: relative;
 }
-.gb-banner-section:after{
+
+.gb-banner-section:after {
     content: "";
     display: block;
     position: absolute;
     left: 0;
     top: 0;
-    right:0;
+    right: 0;
     bottom: 0;
     z-index: 1;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0), #1F313B);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#1F313B));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #1F313B);
     mix-blend-mode: multiply;
 }
-.gb-banner-section .gb-inside-container{
+
+.gb-banner-section .gb-inside-container {
     position: relative;
-    z-index:2;
+    z-index: 2;
 }
-figure.wp-block-image.home-gallery-sm{
+
+figure.wp-block-image.home-gallery-sm {
     height: 267px;
 }
-figure.wp-block-image.home-gallery-md{
+
+figure.wp-block-image.home-gallery-md {
     height: 350px;
 }
-figure.wp-block-image.home-gallery-sm img, figure.wp-block-image.home-gallery-md img{
+
+figure.wp-block-image.home-gallery-sm img,
+figure.wp-block-image.home-gallery-md img {
     width: 100%;
     height: 100%;
     max-width: none;
     max-height: none;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center center;
     object-position: center center;
 }
+
 .wp-block-button .wp-block-button__link {
-	letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
     padding: 20px 30px;
 }
-figure.wp-block-image.img-fluid{
+
+figure.wp-block-image.img-fluid {
     max-height: 475px;
     min-height: 475px;
 }
-figure.wp-block-image.img-fluid img{
+
+figure.wp-block-image.img-fluid img {
     max-width: none;
     max-height: none;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center center;
     object-position: center center;
     min-height: 475px;
 }
+
 .floorplangrid-wrap {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)) !important;
     padding: 0;
 }
+
 /*--------------media queries---------------------*/
-@media(max-width:1200px){
-    .gb-container.testimonial-box::before{
+@media(max-width:1200px) {
+    .gb-container.testimonial-box::before {
+        -webkit-transform: translate(-10px, -40px);
         transform: translate(-10px, -40px);
     }
-    .gb-container.testimonial-box::after{
+
+    .gb-container.testimonial-box::after {
         left: -10px;
         top: 80px;
     }
-    body .gb-container.amenities-text .gb-inside-container{
+
+    body .gb-container.amenities-text .gb-inside-container {
         margin: 0 auto;
     }
-    body .gb-container.section-amenities.row-reverse .gb-inside-container > div{
+
+    body .gb-container.section-amenities.row-reverse .gb-inside-container > div {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
+
     body .gb-container.amenities-text.margin-l-auto .gb-inside-container {
         margin-right: auto;
     }
 }
-@media(max-width:991px){
-    body .site-footer .inside-footer-widgets{
+
+@media(max-width:991px) {
+    body .site-footer .inside-footer-widgets {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         text-align: center;
     }
-    body .site-footer .footer-bar{
+
+    body .site-footer .footer-bar {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
     }
-    body .site-footer .footer-bar aside, body .footer-bar-active .footer-bar .widget{
+
+    body .site-footer .footer-bar aside,
+    body .footer-bar-active .footer-bar .widget {
         padding-bottom: 25px;
     }
+
     body .footer-bar .menu-footer-bar-menu-container {
         padding-right: 0;
     }
+
     .site-footer .site-info .brindle-logo.widget {
         padding-left: 0;
     }
-    body .footer-bar .widget_nav_menu li:first-child::before{
+
+    body .footer-bar .widget_nav_menu li:first-child::before {
         display: none;
     }
+
     body .top-bar .inside-top-bar {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
     }
+
     .top-bar .widget_nav_menu li:last-child a {
-        padding:8px 20px;
+        padding: 8px 20px;
     }
 }
-@media(max-width:767px){
-    .top-bar{
+
+@media(max-width:768px) {
+
+    body .resp-tab-active,
+    body .resp-tab-item:hover {
+        color: #353729;
+    }
+}
+
+@media(max-width:767px) {
+    .top-bar {
         display: none;
     }
-    .gb-container.border-right::after{
+
+    .gb-container.border-right::after {
         display: none;
+    }
+
+    body .gform_footer.top_label {
+        padding-right: 0;
+    }
+
+    body .gb-grid-wrapper.gb-grid-wrapper-0b56aa39 .wp-block-image img {
+        max-width: none;
+        max-height: none;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center center;
+        object-position: center center;
+    }
+}
+
+@media(max-width:576px) {
+    body .floorplangrid-wrap {
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     }
 }
 
 /*=============colors==============*/
 
-.top-bar .widget_nav_menu li:last-child a{
+.top-bar .widget_nav_menu li:last-child a {
     /*background-color: #bca664;*/
 }
-.top-bar .widget_nav_menu li:last-child a:hover{
-   /* color: #1f313b;*/
+
+.top-bar .widget_nav_menu li:last-child a:hover {
+    /* color: #1f313b;*/
 }
-.gb-container.testimonial-box::after{
-    border-left: 4px solid #000;
-    border-bottom: 4px solid #000;
+
+.gb-container.testimonial-box::after {
+    border-left: 4px solid #FFF;
+    border-bottom: 4px solid #FFF;
 }
-.gb-container.border-after::after{
-   /* background-color: #bca664;*/
+
+.gb-container.border-after::after {
+    /* background-color: #bca664;*/
 }
-.gb-container.border-right::after{
+
+.gb-container.border-right::after {
     /*background-color: #8c3944;*/
 }
-.wp-block-buttons.banner-btn-grp .wp-block-button a:hover{
+
+.wp-block-buttons.banner-btn-grp .wp-block-button a:hover {
     /*color: #bca664;
     border-bottom: 1px solid #bca664;*/
     border-bottom: 1px solid;
 }
-.wp-block-buttons.banner-btn-grp .wp-block-button a{
+
+.wp-block-buttons.banner-btn-grp .wp-block-button a {
     background-color: transparent;
-   /* color: #bca664;*/
+    /* color: #bca664;*/
 }
-body .gform_wrapper .gform_footer input.button, body .gform_wrapper .gform_footer input[type="submit"]{
-   /* background-color: #c4913e;*/
+
+body .gform_wrapper .gform_footer input.button,
+body .gform_wrapper .gform_footer input[type="submit"] {
+    /* background-color: #c4913e;*/
 }
-body .gform_wrapper .gform_footer input.button:hover, body .gform_wrapper .gform_footer input[type="submit"]:hover{
+
+body .gform_wrapper .gform_footer input.button:hover,
+body .gform_wrapper .gform_footer input[type="submit"]:hover {
     /*background-color: #414042;*/
 }
+
 /*
 .main-navigation .main-nav ul li.nav-bar-button a{
     background-color: #bca664;

@@ -19,5 +19,6 @@ jQuery( document ).ready( function( $ ) {
     $( '.view-full-list' ).on( 'click', function( e ) {
         e.preventDefault();         
         $(this).parent().parent().find(".full-list").children('li:gt(2)').show();
+        $(this).hide();
     } );
 } );
